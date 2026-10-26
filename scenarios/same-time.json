@@ -1,0 +1,85 @@
+{
+  "name": "same-time",
+  "max_gap_ms": 20,
+  "expected_totals_ms": {
+    "A": 10,
+    "B": 10
+  },
+  "expected_active_session": "B",
+  "events": [
+    {
+      "id": "load-A-0",
+      "kind": "load",
+      "receive_ms": 0,
+      "source_ms": 0,
+      "session": "A",
+      "program": "O100.NC"
+    },
+    {
+      "id": "boot-1-1-0",
+      "kind": "sample",
+      "receive_ms": 0,
+      "source_ms": 0,
+      "instance": "boot-1",
+      "sequence": 1,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-2-10",
+      "kind": "sample",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "instance": "boot-1",
+      "sequence": 2,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "unload-A-10",
+      "kind": "unload",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "session": "A"
+    },
+    {
+      "id": "load-B-10",
+      "kind": "load",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "session": "B",
+      "program": "O100.NC"
+    },
+    {
+      "id": "stale-same-time",
+      "kind": "unload",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "session": "A"
+    },
+    {
+      "id": "boot-1-3-10",
+      "kind": "sample",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "instance": "boot-1",
+      "sequence": 3,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-4-20",
+      "kind": "sample",
+      "receive_ms": 20,
+      "source_ms": 20,
+      "instance": "boot-1",
+      "sequence": 4,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    }
+  ]
+}

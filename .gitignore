@@ -5,3 +5,4 @@ src-gen/
 __pycache__/
 *.pyc
 .DS_Store
+artifacts/

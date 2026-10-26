@@ -1,0 +1,98 @@
+{
+  "name": "stale-restart",
+  "max_gap_ms": 20,
+  "expected_totals_ms": {
+    "A": 20
+  },
+  "expected_active_session": "A",
+  "events": [
+    {
+      "id": "load-A-0",
+      "kind": "load",
+      "receive_ms": 0,
+      "source_ms": 0,
+      "session": "A",
+      "program": "O100.NC"
+    },
+    {
+      "id": "boot-1-1-10",
+      "kind": "sample",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "instance": "boot-1",
+      "sequence": 1,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-2-20",
+      "kind": "sample",
+      "receive_ms": 20,
+      "source_ms": 20,
+      "instance": "boot-1",
+      "sequence": 2,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "restart-25",
+      "kind": "restart",
+      "receive_ms": 25,
+      "source_ms": 25,
+      "instance": "boot-2"
+    },
+    {
+      "id": "boot-2-1-30",
+      "kind": "sample",
+      "receive_ms": 30,
+      "source_ms": 30,
+      "instance": "boot-2",
+      "sequence": 1,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-2-2-40",
+      "kind": "sample",
+      "receive_ms": 40,
+      "source_ms": 40,
+      "instance": "boot-2",
+      "sequence": 2,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "delayed-old-restart",
+      "kind": "restart",
+      "receive_ms": 41,
+      "source_ms": 0,
+      "instance": "boot-1"
+    },
+    {
+      "id": "boot-1-3-45",
+      "kind": "sample",
+      "receive_ms": 45,
+      "source_ms": 45,
+      "instance": "boot-1",
+      "sequence": 3,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-2-3-50",
+      "kind": "sample",
+      "receive_ms": 50,
+      "source_ms": 50,
+      "instance": "boot-2",
+      "sequence": 3,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "name": "coverage-boundary",
+  "max_gap_ms": 20,
+  "expected_totals_ms": {
+    "A": 39
+  },
+  "expected_active_session": "A",
+  "events": [
+    {
+      "id": "load-A-0",
+      "kind": "load",
+      "receive_ms": 0,
+      "source_ms": 0,
+      "session": "A",
+      "program": "O100.NC"
+    },
+    {
+      "id": "boot-1-1-10",
+      "kind": "sample",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "instance": "boot-1",
+      "sequence": 1,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-2-30",
+      "kind": "sample",
+      "receive_ms": 30,
+      "source_ms": 30,
+      "instance": "boot-1",
+      "sequence": 2,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-3-51",
+      "kind": "sample",
+      "receive_ms": 51,
+      "source_ms": 51,
+      "instance": "boot-1",
+      "sequence": 3,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-4-60",
+      "kind": "sample",
+      "receive_ms": 60,
+      "source_ms": 60,
+      "instance": "boot-1",
+      "sequence": 4,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-5-70",
+      "kind": "sample",
+      "receive_ms": 70,
+      "source_ms": 70,
+      "instance": "boot-1",
+      "sequence": 5,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": false
+    },
+    {
+      "id": "boot-1-6-80",
+      "kind": "sample",
+      "receive_ms": 80,
+      "source_ms": 80,
+      "instance": "boot-1",
+      "sequence": 6,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-7-90",
+      "kind": "sample",
+      "receive_ms": 90,
+      "source_ms": 90,
+      "instance": "boot-1",
+      "sequence": 7,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    }
+  ]
+}

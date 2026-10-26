@@ -1,0 +1,63 @@
+{
+  "name": "stale-unload",
+  "max_gap_ms": 20,
+  "expected_totals_ms": {
+    "A": 0,
+    "B": 10
+  },
+  "expected_active_session": "B",
+  "events": [
+    {
+      "id": "load-A-0",
+      "kind": "load",
+      "receive_ms": 0,
+      "source_ms": 0,
+      "session": "A",
+      "program": "O100.NC"
+    },
+    {
+      "id": "unload-A-10",
+      "kind": "unload",
+      "receive_ms": 10,
+      "source_ms": 10,
+      "session": "A"
+    },
+    {
+      "id": "load-B-20",
+      "kind": "load",
+      "receive_ms": 20,
+      "source_ms": 20,
+      "session": "B",
+      "program": "O100.NC"
+    },
+    {
+      "id": "late-unload-A",
+      "kind": "unload",
+      "receive_ms": 30,
+      "source_ms": 10,
+      "session": "A"
+    },
+    {
+      "id": "boot-1-1-40",
+      "kind": "sample",
+      "receive_ms": 40,
+      "source_ms": 40,
+      "instance": "boot-1",
+      "sequence": 1,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    },
+    {
+      "id": "boot-1-2-50",
+      "kind": "sample",
+      "receive_ms": 50,
+      "source_ms": 50,
+      "instance": "boot-1",
+      "sequence": 2,
+      "program": "o100",
+      "execution": "RUNNING",
+      "available": true
+    }
+  ]
+}

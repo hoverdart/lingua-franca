@@ -1,7 +1,101 @@
-target Python
+target Python {
+  fast: true,
+  workers: 1
+}
+
+preamble {=
+import os
+import sys
+from pathlib import Path
+sys.path.insert(0, os.environ.get("LF_REPLAY_ROOT", str(Path(__file__).resolve().parents[2])))
+from replay.scenario import load_scenario
+from replay.coordinator import Coordinator as Model
+from replay.monitor import ContractMonitor
+=}
+
+// Sources remain separate so later experiments can replace either boundary.
+reactor Operator {
+  input event
+  output command
+  reaction(event) -> command {=
+    if event.value["kind"] in ("load", "unload"):
+        command.set(event.value)
+  =}
+}
+
+reactor Machine {
+  input event
+  output observation
+  reaction(event) -> observation {=
+    if event.value["kind"] in ("sample", "gap", "restart"):
+        observation.set(event.value)
+  =}
+}
+
+reactor Coordinator {
+  input command
+  input observation
+  output decision
+  state model = {= None =}
+  reaction(startup) {=
+    self.model = Model(os.environ.get("LF_REPLAY_MUTANT", "none"))
+  =}
+  reaction(command, observation) -> decision {=
+    event = command.value if command.is_present else observation.value
+    decision.set(self.model.apply(event))
+  =}
+}
+
+reactor Monitor {
+  input raw
+  input decision
+  state contracts = {= None =}
+  reaction(startup) {=
+    self.contracts = ContractMonitor(load_scenario())
+  =}
+  // Join original input and downstream decision at the same logical tag.
+  reaction(raw, decision) {=
+    if not (raw.is_present and decision.is_present):
+        raise RuntimeError("Replay input and decision must share a tag")
+    tag = {"time_ns": lf.time.logical_elapsed(), "microstep": lf.tag().microstep}
+    self.contracts.observe(raw.value, decision.value, tag)
+  =}
+  reaction(shutdown) {=
+    self.contracts.finish(os.environ.get("LF_REPLAY_REPORT", "artifacts/report.json"))
+  =}
+}
+
+reactor Replay {
+  state scenario = {= None =}
+  state cursor = 0
+  logical action next_event
+  output event
+
+  reaction(startup) -> next_event {=
+    self.scenario = load_scenario()
+    next_event.schedule(self.scenario["events"][0]["receive_ms"] * 1_000_000)
+  =}
+  reaction(next_event) -> event, next_event {=
+    item = self.scenario["events"][self.cursor]
+    event.set(item)
+    self.cursor += 1
+    if self.cursor < len(self.scenario["events"]):
+        following = self.scenario["events"][self.cursor]
+        # Zero delay advances the microstep, preserving file order on ties.
+        next_event.schedule((following["receive_ms"] - item["receive_ms"]) * 1_000_000)
+  =}
+}
 
 main reactor {
-  reaction(startup) {=
-    print("Hello World.")
-  =}
+  replay = new Replay()
+  operator = new Operator()
+  machine = new Machine()
+  coordinator = new Coordinator()
+  monitor = new Monitor()
+  replay.event -> operator.event
+  replay.event -> machine.event
+  replay.event -> monitor.raw
+  operator.command -> coordinator.command
+  machine.observation -> coordinator.observation
+  coordinator.decision -> monitor.decision
 }
