@@ -1,0 +1,32 @@
+---- Start execution on Tue Nov 10 22:37:06 2026 ---- plus 121550000 nanoseconds
+Fed 1 (workflow_main): Connected to localhost:15045.
+Fed 1 (workflow_main): Federation start time is: 1794379027377068000.
+Fed 1 (workflow_main): Starting timestamp is: 1794379027377068000 and effective start tag is: (0, 0).
+EXPERIMENT {"event":"accepted","seq":1,"value":1,"logical_ns":200000000,"microstep":0,"physical_ns":260540000,"intended_ns":200000000,"intended_microstep":0,"began_ns":260540000}
+EXPERIMENT {"event":"decision_start","seq":1,"value":1,"logical_ns":200000000,"microstep":0,"physical_ns":260594000,"intended_ns":200000000,"intended_microstep":0,"began_ns":260594000}
+EXPERIMENT {"event":"decision_end","seq":1,"value":1,"logical_ns":200000000,"microstep":0,"physical_ns":260611000,"intended_ns":200000000,"intended_microstep":0,"began_ns":260594000}
+EXPERIMENT {"event":"run","seq":1,"value":1,"logical_ns":200000000,"microstep":0,"physical_ns":260618000,"intended_ns":200000000,"intended_microstep":0,"began_ns":260617000}
+EXPERIMENT {"event":"accepted","seq":2,"value":1,"logical_ns":600000000,"microstep":0,"physical_ns":660173000,"intended_ns":600000000,"intended_microstep":0,"began_ns":660173000}
+EXPERIMENT {"event":"decision_start","seq":2,"value":1,"logical_ns":600000000,"microstep":0,"physical_ns":660219000,"intended_ns":600000000,"intended_microstep":0,"began_ns":660219000}
+EXPERIMENT {"event":"decision_end","seq":2,"value":1,"logical_ns":600000000,"microstep":0,"physical_ns":660243000,"intended_ns":600000000,"intended_microstep":0,"began_ns":660219000}
+EXPERIMENT {"event":"run","seq":2,"value":1,"logical_ns":600000000,"microstep":0,"physical_ns":660256000,"intended_ns":600000000,"intended_microstep":0,"began_ns":660255000}
+EXPERIMENT {"event":"accepted","seq":3,"value":1,"logical_ns":1000000000,"microstep":0,"physical_ns":1060351000,"intended_ns":1000000000,"intended_microstep":0,"began_ns":1060351000}
+EXPERIMENT {"event":"decision_start","seq":3,"value":1,"logical_ns":1000000000,"microstep":0,"physical_ns":1060379000,"intended_ns":1000000000,"intended_microstep":0,"began_ns":1060379000}
+EXPERIMENT {"event":"decision_end","seq":3,"value":1,"logical_ns":1000000000,"microstep":0,"physical_ns":1060407000,"intended_ns":1000000000,"intended_microstep":0,"began_ns":1060379000}
+EXPERIMENT {"event":"run","seq":3,"value":1,"logical_ns":1000000000,"microstep":0,"physical_ns":1060424000,"intended_ns":1000000000,"intended_microstep":0,"began_ns":1060424000}
+EXPERIMENT {"event":"accepted","seq":4,"value":1,"logical_ns":1400000000,"microstep":0,"physical_ns":1454204000,"intended_ns":1400000000,"intended_microstep":0,"began_ns":1454204000}
+EXPERIMENT {"event":"decision_start","seq":4,"value":1,"logical_ns":1400000000,"microstep":0,"physical_ns":1454248000,"intended_ns":1400000000,"intended_microstep":0,"began_ns":1454248000}
+EXPERIMENT {"event":"decision_end","seq":4,"value":1,"logical_ns":1400000000,"microstep":0,"physical_ns":1454274000,"intended_ns":1400000000,"intended_microstep":0,"began_ns":1454248000}
+EXPERIMENT {"event":"run","seq":4,"value":1,"logical_ns":1400000000,"microstep":0,"physical_ns":1454291000,"intended_ns":1400000000,"intended_microstep":0,"began_ns":1454291000}
+EXPERIMENT {"event":"accepted","seq":5,"value":1,"logical_ns":1800000000,"microstep":0,"physical_ns":1856799000,"intended_ns":1800000000,"intended_microstep":0,"began_ns":1856799000}
+EXPERIMENT {"event":"decision_start","seq":5,"value":1,"logical_ns":1800000000,"microstep":0,"physical_ns":1856856000,"intended_ns":1800000000,"intended_microstep":0,"began_ns":1856855000}
+EXPERIMENT {"event":"decision_end","seq":5,"value":1,"logical_ns":1800000000,"microstep":0,"physical_ns":1856900000,"intended_ns":1800000000,"intended_microstep":0,"began_ns":1856855000}
+EXPERIMENT {"event":"run","seq":5,"value":1,"logical_ns":1800000000,"microstep":0,"physical_ns":1856922000,"intended_ns":1800000000,"intended_microstep":0,"began_ns":1856922000}
+EXPERIMENT {"event":"accepted","seq":6,"value":1,"logical_ns":2200000000,"microstep":0,"physical_ns":2260073000,"intended_ns":2200000000,"intended_microstep":0,"began_ns":2260073000}
+EXPERIMENT {"event":"decision_start","seq":6,"value":1,"logical_ns":2200000000,"microstep":0,"physical_ns":2260133000,"intended_ns":2200000000,"intended_microstep":0,"began_ns":2260132000}
+EXPERIMENT {"event":"decision_end","seq":6,"value":1,"logical_ns":2200000000,"microstep":0,"physical_ns":2260144000,"intended_ns":2200000000,"intended_microstep":0,"began_ns":2260132000}
+EXPERIMENT {"event":"run","seq":6,"value":1,"logical_ns":2200000000,"microstep":0,"physical_ns":2260148000,"intended_ns":2200000000,"intended_microstep":0,"began_ns":2260148000}
+Fed 1 (workflow_main): network abstraction from federate 0 is closed.
+Fed 1 (workflow_main): Connection to the RTI closed with an EOF.
+Fed 1 (workflow_main): ---- Elapsed logical time (in nsec): 3,000,000,000
+Fed 1 (workflow_main): ---- Elapsed physical time (in nsec): 3,005,562,000

@@ -1,0 +1,8 @@
+[36mFederation PhysicalTime with Federation ID 'e412ac20afb197ecb4e04175de27a9bd3f6d73011de93eac'.[0m
+[36m#### Launching the runtime infrastructure (RTI).[0m
+[36m#### Launching the federate federate__adapter.[0m
+[36m#### Launching the federate federate__workflow.[0m
+[36m#### Bringing the RTI back to foreground so it can receive Control-C.
+/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w80/fed-gen/PhysicalTime/bin/RTI -i ${FEDERATION_ID} ${RTI_START_TIME_MULTIPLE} -n 2 -nt 0 -c init exchanges-per-interval 10 \  >&RTI.log
+[36mAll components launched. Waiting for federates to complete...[0m
+[36mAll done.[0m

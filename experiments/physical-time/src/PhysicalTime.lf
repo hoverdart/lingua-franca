@@ -1,0 +1,107 @@
+target C {
+  coordination: decentralized,
+  workers: 1,
+  timeout: 3 sec
+}
+
+preamble {=
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+static int option(const char* name, int fallback) {
+    const char* value = getenv(name);
+    return value ? atoi(value) : fallback;
+}
+// Inject physical execution time only: LF's logical tag is not advanced.
+static void elapsed_ms(int ms) {
+    struct timespec requested = {.tv_sec=ms/1000, .tv_nsec=(ms%1000)*1000000L};
+    while (nanosleep(&requested, &requested) && errno == EINTR) {}
+}
+static void record(void* env, const char* event, int seq, int value, long long intended,
+                   unsigned int intended_microstep, long long began) {
+    printf("EXPERIMENT {\"event\":\"%s\",\"seq\":%d,\"value\":%d,"
+           "\"logical_ns\":%lld,\"microstep\":%u,\"physical_ns\":%lld,"
+           "\"intended_ns\":%lld,\"intended_microstep\":%u,\"began_ns\":%lld}\n",
+           event, seq, value, lf_time_logical_elapsed(env), lf_tag(env).microstep,
+           lf_time_physical_elapsed(), intended, intended_microstep, began);
+    fflush(stdout);
+}
+=}
+
+reactor Adapter {
+  output observation: int
+  timer cycle(200 ms, 400 ms)
+  state seq: int = 0
+  reaction(cycle) -> observation {=
+    if (++self->seq > 6) return;
+    long long start = lf_time_physical_elapsed();
+    record(self->base.environment, "source_start", self->seq, 0, lf_time_logical_elapsed(), lf_tag().microstep, start);
+    elapsed_ms(option("LF_SOURCE_MS", 5));
+    if (self->seq == option("LF_OMIT_SEQ", -1)) {
+        record(self->base.environment, "omitted", self->seq, 0, lf_time_logical_elapsed(), lf_tag().microstep, start);
+    } else {
+        lf_set(observation, self->seq);
+        record(self->base.environment, "produced", self->seq, 1, lf_time_logical_elapsed(), lf_tag().microstep, start);
+    }
+  =}
+}
+
+reactor Actuator {
+  input decision: int
+  reaction(decision) {=
+    record(self->base.environment, decision->value > 0 ? "run" : "hold_missing", abs(decision->value),
+           decision->value > 0, lf_time_logical_elapsed(), lf_tag().microstep,
+           lf_time_physical_elapsed());
+  =} deadline(100 ms) {=
+    record(self->base.environment, "hold_deadline", abs(decision->value), 0, lf_time_logical_elapsed(),
+           lf_tag().microstep, lf_time_physical_elapsed());
+  =}
+}
+
+reactor Controller {
+  input observation: int
+  output decision: int
+  state seq: int = 0
+  state latest: int = 0
+  state latest_tag: time = 0
+  timer cycle(200 ms, 400 ms)
+  reaction(observation) {=
+    self->latest = observation->value;
+    self->latest_tag = lf_time_logical();
+    record(self->base.environment, "accepted", observation->value, 1, lf_time_logical_elapsed(),
+           lf_tag().microstep, lf_time_physical_elapsed());
+  =} tardy {=
+    // An expired observation cannot authorize a later cycle.
+    record(self->base.environment, "tardy", observation->value, 0,
+           observation->intended_tag.time - lf_time_start(),
+           observation->intended_tag.microstep, lf_time_physical_elapsed());
+  =}
+  reaction(cycle) -> decision {=
+    if (++self->seq > 6) return;
+    long long start = lf_time_physical_elapsed();
+    bool fresh = self->latest == self->seq && self->latest_tag == lf_time_logical();
+    record(self->base.environment, "decision_start", self->seq, fresh, lf_time_logical_elapsed(), lf_tag().microstep, start);
+    elapsed_ms(option("LF_COMPUTE_MS", 0));
+    // Negative control deliberately bypasses the freshness guard.
+    bool allow = fresh || option("LF_UNSAFE_MUTANT", 0);
+    lf_set(decision, allow ? self->seq : -self->seq);
+    record(self->base.environment, "decision_end", self->seq, allow, lf_time_logical_elapsed(), lf_tag().microstep, start);
+  =}
+}
+
+reactor ControlledWorkflow {
+  input observation: int
+  controller = new Controller()
+  actuator = new Actuator()
+  observation -> controller.observation
+  controller.decision -> actuator.decision
+}
+
+federated reactor PhysicalTime {
+  @maxwait(0)
+  adapter = new Adapter()
+  @maxwait(20 ms)
+  workflow = new ControlledWorkflow()
+  adapter.observation -> workflow.observation
+}

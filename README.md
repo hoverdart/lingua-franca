@@ -13,6 +13,13 @@ This is a synthetic, local experiment inspired by Foundation Industries'
 milling-tracking contracts. It does not connect to Foundation services or machine
 controllers. Its durations are model outputs, not measured machining time.
 
+## Physical-time implementation experiment
+
+A separate [controlled experiment](experiments/physical-time/README.md) now runs
+actual decentralized C federates with measured physical service delays, native
+tardy/deadline handlers, and independent safety checks. See the
+[measured findings](experiments/physical-time/REPORT.md) for the 60-run study.
+
 ## Run on your Mac
 
 The existing `.venv` has LF 0.13.0 and Python 3.12. Native compilation also needs

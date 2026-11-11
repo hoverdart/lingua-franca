@@ -1,0 +1,605 @@
+{
+  "seed": 20261111,
+  "cases": [
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 150,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "compute",
+      "repeat": 2
+    },
+    {
+      "wait": "200",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 2
+    },
+    {
+      "wait": "forever",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": 3,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "omission",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "200",
+      "source_ms": 5,
+      "compute_ms": 150,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "compute",
+      "repeat": 1
+    },
+    {
+      "wait": "200",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "200",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 2
+    },
+    {
+      "wait": "200",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "80",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "80",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "80",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "forever",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": 3,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "omission",
+      "repeat": 0
+    },
+    {
+      "wait": "forever",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": 3,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "omission",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "200",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "200",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": 3,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "omission",
+      "repeat": 2
+    },
+    {
+      "wait": "200",
+      "source_ms": 5,
+      "compute_ms": 150,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "compute",
+      "repeat": 0
+    },
+    {
+      "wait": "200",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 150,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "compute",
+      "repeat": 1
+    },
+    {
+      "wait": "200",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "forever",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": 3,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "omission",
+      "repeat": 2
+    },
+    {
+      "wait": "200",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "200",
+      "source_ms": 5,
+      "compute_ms": 150,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "compute",
+      "repeat": 2
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "80",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "80",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "80",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 1,
+      "workers": 1,
+      "kind": "negative_control",
+      "repeat": 1
+    },
+    {
+      "wait": "200",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 150,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "compute",
+      "repeat": 0
+    },
+    {
+      "wait": "forever",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": 3,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "omission",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 2
+    },
+    {
+      "wait": "forever",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "80",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 0
+    },
+    {
+      "wait": "forever",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 1,
+      "workers": 1,
+      "kind": "negative_control",
+      "repeat": 0
+    },
+    {
+      "wait": "80",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "forever",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "80",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "forever",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "200",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "forever",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 2
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "forever",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "forever",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    },
+    {
+      "wait": "20",
+      "source_ms": 5,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 4,
+      "kind": "worker_control",
+      "repeat": 0
+    },
+    {
+      "wait": "20",
+      "source_ms": 50,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 1,
+      "workers": 1,
+      "kind": "negative_control",
+      "repeat": 2
+    },
+    {
+      "wait": "200",
+      "source_ms": 150,
+      "compute_ms": 0,
+      "omit_seq": -1,
+      "mutant": 0,
+      "workers": 1,
+      "kind": "factorial",
+      "repeat": 1
+    }
+  ]
+}

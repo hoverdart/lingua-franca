@@ -1,0 +1,21 @@
+---- Start execution on Tue Nov 10 22:39:22 2026 ---- plus 59169000 nanoseconds
+Fed 0 (adapter_main): Connected to localhost:15045.
+Fed 0 (adapter_main): Connected to 127.0.0.1:53187.
+Fed 0 (adapter_main): Connected to federate 1, port 53187.
+Fed 0 (adapter_main): Federation start time is: 1794379163061179000.
+Fed 0 (adapter_main): Starting timestamp is: 1794379163061179000 and effective start tag is: (0, 0).
+EXPERIMENT {"event":"source_start","seq":1,"value":0,"logical_ns":200000000,"microstep":0,"physical_ns":203302000,"intended_ns":200000000,"intended_microstep":0,"began_ns":203302000}
+EXPERIMENT {"event":"produced","seq":1,"value":1,"logical_ns":200000000,"microstep":0,"physical_ns":209817000,"intended_ns":200000000,"intended_microstep":0,"began_ns":203302000}
+EXPERIMENT {"event":"source_start","seq":2,"value":0,"logical_ns":600000000,"microstep":0,"physical_ns":605047000,"intended_ns":600000000,"intended_microstep":0,"began_ns":605047000}
+EXPERIMENT {"event":"produced","seq":2,"value":1,"logical_ns":600000000,"microstep":0,"physical_ns":611372000,"intended_ns":600000000,"intended_microstep":0,"began_ns":605047000}
+EXPERIMENT {"event":"source_start","seq":3,"value":0,"logical_ns":1000000000,"microstep":0,"physical_ns":1001050000,"intended_ns":1000000000,"intended_microstep":0,"began_ns":1001050000}
+EXPERIMENT {"event":"produced","seq":3,"value":1,"logical_ns":1000000000,"microstep":0,"physical_ns":1007447000,"intended_ns":1000000000,"intended_microstep":0,"began_ns":1001050000}
+EXPERIMENT {"event":"source_start","seq":4,"value":0,"logical_ns":1400000000,"microstep":0,"physical_ns":1401603000,"intended_ns":1400000000,"intended_microstep":0,"began_ns":1401603000}
+EXPERIMENT {"event":"produced","seq":4,"value":1,"logical_ns":1400000000,"microstep":0,"physical_ns":1406722000,"intended_ns":1400000000,"intended_microstep":0,"began_ns":1401603000}
+EXPERIMENT {"event":"source_start","seq":5,"value":0,"logical_ns":1800000000,"microstep":0,"physical_ns":1805047000,"intended_ns":1800000000,"intended_microstep":0,"began_ns":1805047000}
+EXPERIMENT {"event":"produced","seq":5,"value":1,"logical_ns":1800000000,"microstep":0,"physical_ns":1811459000,"intended_ns":1800000000,"intended_microstep":0,"began_ns":1805047000}
+EXPERIMENT {"event":"source_start","seq":6,"value":0,"logical_ns":2200000000,"microstep":0,"physical_ns":2201254000,"intended_ns":2200000000,"intended_microstep":0,"began_ns":2201254000}
+EXPERIMENT {"event":"produced","seq":6,"value":1,"logical_ns":2200000000,"microstep":0,"physical_ns":2207660000,"intended_ns":2200000000,"intended_microstep":0,"began_ns":2201254000}
+Fed 0 (adapter_main): Connection to the RTI closed with an EOF.
+Fed 0 (adapter_main): ---- Elapsed logical time (in nsec): 3,000,000,000
+Fed 0 (adapter_main): ---- Elapsed physical time (in nsec): 3,003,684,000

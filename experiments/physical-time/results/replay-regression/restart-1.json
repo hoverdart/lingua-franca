@@ -1,0 +1,264 @@
+{
+  "active": {
+    "program": "O100.NC",
+    "session": "A"
+  },
+  "counterexample": null,
+  "mutant": "none",
+  "provenance": {
+    "build": {
+      "compiler": "lfc 0.13.0",
+      "lf_source_sha256": "92ab1ebaf60e5b57df0322477313449f64c3afb3e8b371429b09f9b1cc2e109a"
+    },
+    "scenario_sha256": "53009880b6e092bbb5178293afbf713407409702690e46510339369f1233a603",
+    "sources_sha256": {
+      "replay/__init__.py": "398d8c1d66947b70bd4050c7bdfb8c06dc37b1152fa2a47f631d4505a319dab9",
+      "replay/coordinator.py": "a96d9fa63e8e911202e81ab75bab98cb740229c9f532636cd61d2a9c3112d22c",
+      "replay/monitor.py": "bfe4e822131e833c153e2316beb8286cadff99a2ce90562b8a0d60340e8b7e78",
+      "replay/scenario.py": "7412cf71215f5539af5c790923ba4eed359aae5b5f2384b3df9ae3bf1018bcbf",
+      "src/Main.lf": "92ab1ebaf60e5b57df0322477313449f64c3afb3e8b371429b09f9b1cc2e109a"
+    }
+  },
+  "records": [
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 0,
+        "credited_session": null,
+        "event_id": "load-A-0",
+        "reason": "loaded",
+        "totals_ms": {
+          "A": 0
+        }
+      },
+      "input": {
+        "id": "load-A-0",
+        "kind": "load",
+        "program": "O100.NC",
+        "receive_ms": 0,
+        "session": "A",
+        "source_ms": 0
+      },
+      "tag": {
+        "microstep": 1,
+        "time_ns": 0
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 0,
+        "credited_session": null,
+        "event_id": "boot-1-1-10",
+        "reason": "anchor",
+        "totals_ms": {
+          "A": 0
+        }
+      },
+      "input": {
+        "available": true,
+        "execution": "RUNNING",
+        "id": "boot-1-1-10",
+        "instance": "boot-1",
+        "kind": "sample",
+        "program": "o100",
+        "receive_ms": 10,
+        "sequence": 1,
+        "source_ms": 10
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 10000000
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 10,
+        "credited_session": "A",
+        "event_id": "boot-1-2-20",
+        "reason": "attributed",
+        "totals_ms": {
+          "A": 10
+        }
+      },
+      "input": {
+        "available": true,
+        "execution": "RUNNING",
+        "id": "boot-1-2-20",
+        "instance": "boot-1",
+        "kind": "sample",
+        "program": "o100",
+        "receive_ms": 20,
+        "sequence": 2,
+        "source_ms": 20
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 20000000
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 0,
+        "credited_session": null,
+        "event_id": "restart-25",
+        "reason": "restart",
+        "totals_ms": {
+          "A": 10
+        }
+      },
+      "input": {
+        "id": "restart-25",
+        "instance": "boot-2",
+        "kind": "restart",
+        "receive_ms": 25,
+        "source_ms": 25
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 25000000
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 0,
+        "credited_session": null,
+        "event_id": "boot-2-1-30",
+        "reason": "anchor",
+        "totals_ms": {
+          "A": 10
+        }
+      },
+      "input": {
+        "available": true,
+        "execution": "RUNNING",
+        "id": "boot-2-1-30",
+        "instance": "boot-2",
+        "kind": "sample",
+        "program": "o100",
+        "receive_ms": 30,
+        "sequence": 1,
+        "source_ms": 30
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 30000000
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 10,
+        "credited_session": "A",
+        "event_id": "boot-2-2-40",
+        "reason": "attributed",
+        "totals_ms": {
+          "A": 20
+        }
+      },
+      "input": {
+        "available": true,
+        "execution": "RUNNING",
+        "id": "boot-2-2-40",
+        "instance": "boot-2",
+        "kind": "sample",
+        "program": "o100",
+        "receive_ms": 40,
+        "sequence": 2,
+        "source_ms": 40
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 40000000
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 0,
+        "credited_session": null,
+        "event_id": "boot-1-3-45",
+        "reason": "retired-instance",
+        "totals_ms": {
+          "A": 20
+        }
+      },
+      "input": {
+        "available": true,
+        "execution": "RUNNING",
+        "id": "boot-1-3-45",
+        "instance": "boot-1",
+        "kind": "sample",
+        "program": "o100",
+        "receive_ms": 45,
+        "sequence": 3,
+        "source_ms": 45
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 45000000
+      }
+    },
+    {
+      "decision": {
+        "active": {
+          "program": "O100.NC",
+          "session": "A"
+        },
+        "credit_ms": 10,
+        "credited_session": "A",
+        "event_id": "boot-2-3-50",
+        "reason": "attributed",
+        "totals_ms": {
+          "A": 30
+        }
+      },
+      "input": {
+        "available": true,
+        "execution": "RUNNING",
+        "id": "boot-2-3-50",
+        "instance": "boot-2",
+        "kind": "sample",
+        "program": "o100",
+        "receive_ms": 50,
+        "sequence": 3,
+        "source_ms": 50
+      },
+      "tag": {
+        "microstep": 0,
+        "time_ns": 50000000
+      }
+    }
+  ],
+  "scenario": "restart",
+  "schema_version": 1,
+  "status": "pass",
+  "totals_ms": {
+    "A": 30
+  },
+  "violations": []
+}

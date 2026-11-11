@@ -1,0 +1,1560 @@
+{
+  "status": "pass",
+  "completed_runs": 60,
+  "planned_runs": 60,
+  "errors": [],
+  "validator_sha256": "779a5cefe20e4210ba30baa616a2cfa14a3ab9a96afdf7d2b0262bae3000cd71",
+  "oracle_sha256": "993c0cc0a72f1c14f032d99d6e7b905fea1023dba5edfde4b2b14866783ff224",
+  "original_execution_harness_sha256": "bb7b4b4204204b0687cdfa49f76c74a6c7c156da4324938e531c66e0a5eb2dd1",
+  "hypotheses": [
+    {
+      "run": 0,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 1,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 150,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "compute",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 2,
+      "case": {
+        "wait": "200",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 3,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 4,
+      "case": {
+        "wait": "forever",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 5,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": 3,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "omission",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 6,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 7,
+      "case": {
+        "wait": "200",
+        "source_ms": 5,
+        "compute_ms": 150,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "compute",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 8,
+      "case": {
+        "wait": "200",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 9,
+      "case": {
+        "wait": "200",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 10,
+      "case": {
+        "wait": "200",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 11,
+      "case": {
+        "wait": "80",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 12,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 13,
+      "case": {
+        "wait": "80",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 14,
+      "case": {
+        "wait": "80",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 15,
+      "case": {
+        "wait": "forever",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 16,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 17,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": 3,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "omission",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 18,
+      "case": {
+        "wait": "forever",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": 3,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "omission",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 19,
+      "case": {
+        "wait": "20",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 20,
+      "case": {
+        "wait": "200",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 21,
+      "case": {
+        "wait": "200",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 22,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": 3,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "omission",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 23,
+      "case": {
+        "wait": "200",
+        "source_ms": 5,
+        "compute_ms": 150,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "compute",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 24,
+      "case": {
+        "wait": "200",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 25,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 150,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "compute",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 26,
+      "case": {
+        "wait": "200",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 27,
+      "case": {
+        "wait": "forever",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": 3,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "omission",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 28,
+      "case": {
+        "wait": "200",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 29,
+      "case": {
+        "wait": "200",
+        "source_ms": 5,
+        "compute_ms": 150,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "compute",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 30,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 31,
+      "case": {
+        "wait": "80",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 32,
+      "case": {
+        "wait": "80",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 33,
+      "case": {
+        "wait": "80",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 34,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 1,
+        "workers": 1,
+        "kind": "negative_control",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 35,
+      "case": {
+        "wait": "200",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 36,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 150,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "compute",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 37,
+      "case": {
+        "wait": "forever",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": 3,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "omission",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 5,
+        "holds": 1,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 38,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 39,
+      "case": {
+        "wait": "forever",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 40,
+      "case": {
+        "wait": "80",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 41,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 42,
+      "case": {
+        "wait": "forever",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 43,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 1,
+        "workers": 1,
+        "kind": "negative_control",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 44,
+      "case": {
+        "wait": "80",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 45,
+      "case": {
+        "wait": "forever",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 46,
+      "case": {
+        "wait": "20",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 47,
+      "case": {
+        "wait": "80",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 48,
+      "case": {
+        "wait": "forever",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 49,
+      "case": {
+        "wait": "200",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 50,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 51,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 52,
+      "case": {
+        "wait": "forever",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 53,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 54,
+      "case": {
+        "wait": "forever",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 55,
+      "case": {
+        "wait": "forever",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 56,
+      "case": {
+        "wait": "20",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 6,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 57,
+      "case": {
+        "wait": "20",
+        "source_ms": 5,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 4,
+        "kind": "worker_control",
+        "repeat": 0
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 0
+      },
+      "matched": true
+    },
+    {
+      "run": 58,
+      "case": {
+        "wait": "20",
+        "source_ms": 50,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 1,
+        "workers": 1,
+        "kind": "negative_control",
+        "repeat": 2
+      },
+      "expected": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "actual": {
+        "run": 6,
+        "hold_missing": 0,
+        "hold_deadline": 0,
+        "tardy": 6
+      },
+      "matched": true
+    },
+    {
+      "run": 59,
+      "case": {
+        "wait": "200",
+        "source_ms": 150,
+        "compute_ms": 0,
+        "omit_seq": -1,
+        "mutant": 0,
+        "workers": 1,
+        "kind": "factorial",
+        "repeat": 1
+      },
+      "expected": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "actual": {
+        "run": 0,
+        "hold_missing": 0,
+        "hold_deadline": 6,
+        "tardy": 0
+      },
+      "matched": true
+    }
+  ],
+  "explanation": "Final oracle reparsed raw per-federate logs; execution used archived harness. No measurements changed."
+}

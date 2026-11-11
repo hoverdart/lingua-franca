@@ -1,0 +1,6 @@
+build/
+bin/
+fed-gen/
+__pycache__/
+results/build-smoke.log
+results/smoke.log

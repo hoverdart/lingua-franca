@@ -1,0 +1,19 @@
+test_contract_failure_has_nonzero_exit_and_reviewable_report (test_replay.CommandLineTests.test_contract_failure_has_nonzero_exit_and_reviewable_report) ... ok
+test_invalid_input_has_distinct_exit_code (test_replay.CommandLineTests.test_invalid_input_has_distinct_exit_code) ... ok
+test_native_startup_error_cannot_reuse_old_success_report (test_replay.CommandLineTests.test_native_startup_error_cannot_reuse_old_success_report) ... ok
+test_report_cannot_overwrite_input_scenario (test_replay.CommandLineTests.test_report_cannot_overwrite_input_scenario) ... ok
+test_delayed_old_epoch_restart_does_not_reactivate_retired_adapter (test_replay.ReplayTests.test_delayed_old_epoch_restart_does_not_reactivate_retired_adapter) ... ok
+test_duplicate_unload_cannot_close_later_assignment (test_replay.ReplayTests.test_duplicate_unload_cannot_close_later_assignment) ... ok
+test_each_intentional_defect_has_a_specific_counterexample (test_replay.ReplayTests.test_each_intentional_defect_has_a_specific_counterexample) ... ok
+test_fixture_oracles_and_contracts (test_replay.ReplayTests.test_fixture_oracles_and_contracts) ... ok
+test_invalid_ingress_is_rejected_before_native_runtime (test_replay.ReplayTests.test_invalid_ingress_is_rejected_before_native_runtime) ... ok
+test_load_conflict_preserves_existing_assignment (test_replay.ReplayTests.test_load_conflict_preserves_existing_assignment) ... ok
+test_missing_event_is_not_a_successful_replay (test_replay.ReplayTests.test_missing_event_is_not_a_successful_replay) ... ok
+test_monitor_does_not_trust_decision_identity (test_replay.ReplayTests.test_monitor_does_not_trust_decision_identity) ... ok
+test_monitor_rejects_tampered_accounting_without_using_model_state (test_replay.ReplayTests.test_monitor_rejects_tampered_accounting_without_using_model_state) ... ok
+test_sample_captured_before_load_cannot_establish_session_execution (test_replay.ReplayTests.test_sample_captured_before_load_cannot_establish_session_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.187s
+
+OK

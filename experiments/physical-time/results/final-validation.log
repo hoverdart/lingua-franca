@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "completed_runs": 60,
+  "planned_runs": 60,
+  "errors": [],
+  "validator_sha256": "779a5cefe20e4210ba30baa616a2cfa14a3ab9a96afdf7d2b0262bae3000cd71",
+  "oracle_sha256": "993c0cc0a72f1c14f032d99d6e7b905fea1023dba5edfde4b2b14866783ff224",
+  "original_execution_harness_sha256": "bb7b4b4204204b0687cdfa49f76c74a6c7c156da4324938e531c66e0a5eb2dd1",
+  "explanation": "Final oracle reparsed raw per-federate logs; execution used archived harness. No measurements changed."
+}

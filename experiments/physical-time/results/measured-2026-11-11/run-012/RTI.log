@@ -1,0 +1,10 @@
+RTI: Number of federates: 2
+RTI: Number of transient federates: 0
+RTI: Clock sync: init
+RTI: Clock sync exchanges per interval: 10
+RTI: Listening for federates.
+RTI: All expected persistent federates have connected. Starting execution.
+RTI: Federate 0 has resigned.
+RTI: Federate 1 has resigned.
+RTI: All persistent threads exited.
+RTI is exiting.

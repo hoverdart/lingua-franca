@@ -1,0 +1,19 @@
+test_bad_tardy_tag (test_oracle.OracleTests.test_bad_tardy_tag) ... ok
+test_changed_tag (test_oracle.OracleTests.test_changed_tag) ... ok
+test_duplicate_terminal (test_oracle.OracleTests.test_duplicate_terminal) ... ok
+test_early_deadline (test_oracle.OracleTests.test_early_deadline) ... ok
+test_extra_sequence (test_oracle.OracleTests.test_extra_sequence) ... ok
+test_insufficient_elapsed (test_oracle.OracleTests.test_insufficient_elapsed) ... ok
+test_late_run (test_oracle.OracleTests.test_late_run) ... ok
+test_missing_terminal (test_oracle.OracleTests.test_missing_terminal) ... ok
+test_positive (test_oracle.OracleTests.test_positive) ... ok
+test_requested_omission_not_honored (test_oracle.OracleTests.test_requested_omission_not_honored) ... ok
+test_unexpected_omission (test_oracle.OracleTests.test_unexpected_omission) ... ok
+test_unnecessary_hold (test_oracle.OracleTests.test_unnecessary_hold) ... ok
+test_unsafe_run (test_oracle.OracleTests.test_unsafe_run) ... ok
+test_wrong_intended_tag (test_oracle.OracleTests.test_wrong_intended_tag) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

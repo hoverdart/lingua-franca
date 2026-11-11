@@ -1,0 +1,306 @@
+lfc: [1minfo[0m[1m: ##### Generating code for federate federate__adapter in directory /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src[0m
+lfc: [1minfo[0m[1m: ##### Generating code for federate federate__workflow in directory /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src[0m
+lfc: [1minfo[0m[1m: Dockerfile written to /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/rti/Dockerfile[0m
+lfc: [1minfo[0m[1m: ******** Using 1 threads to compile the program.[0m
+lfc: [1minfo[0m[1m: Generating code for: file:/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src/federate__adapter.lf[0m
+lfc: [1minfo[0m[1m: Generation mode: STANDALONE[0m
+lfc: [1minfo[0m[1m: Generating sources into: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter[0m
+lfc: [1minfo[0m[1m: Target Configuration:
+      - workers: 1
+      - keepalive: true
+      - single-threaded: false
+      - cmake-include: [include/federate__adapter_extension.cmake]
+      - compile-definitions: {FEDERATED_DECENTRALIZED=, EXECUTABLE_PREAMBLE=, NUMBER_OF_FEDERATES=2, FEDERATE_ID=0, FEDERATED=, LF_CLOCK_SYNC=1, _LF_FEDERATE_NAMES_COMMA_SEPARATED=\"federate__adapter,federate__workflow\"}
+      - timeout: 3 s
+      - docker: DockerOptions[enabled=false, noBuild=false, builderBase=, runnerBase=, rti=rti:local, shell=/bin/sh, preBuildScript=, postBuildScript=, preRunScript=, envFile=, dockerConfigFile=]
+      - _fed_setup: include/_federate__adapter_preamble.h
+      - coordination: decentralized[0m
+lfc: [1minfo[0m[1m: Copied 'include/federate__adapter_extension.cmake' from the file system.[0m
+Cleaning /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/include/src/federate__adapter
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter/build
+--- Executing command: cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime -DCMAKE_INSTALL_BINDIR=bin -DLF_FILE_SEPARATOR='"/"' -DLF_SOURCE_GEN_DIRECTORY=/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter
+-- The C compiler identification is AppleClang 21.0.0.21000401
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Including sources for threaded runtime with 1 worker(s) with scheduler=SCHED_NP and tracing=.
+-- Including the following sources: tag.c, clock.c, port.c, mixed_radix.c, reactor_common.c, lf_token.c, environment.c, federated/clock-sync.c, federated/federate.c, threaded/reactor_threaded.c, threaded/scheduler_adaptive.c, threaded/scheduler_GEDF_NP.c, threaded/scheduler_NP.c, threaded/scheduler_sync_tag_advance.c, threaded/scheduler_instance.c, threaded/watchdog.c, utils/vector.c, utils/pqueue_base.c, utils/pqueue_tag.c, utils/pqueue.c, utils/util.c, utils/lf_semaphore.c, utils/hashset/hashset.c, utils/hashset/hashset_itr.c
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Applying preprocessor definitions to low-level-platform...
+-- LOG_LEVEL=2
+-- NUMBER_OF_WORKERS=1
+-- NUMBER_OF_WATCHDOGS=0
+-- Applying preprocessor definitions to platform...
+-- LOG_LEVEL=2
+-- Applying preprocessor definitions...
+-- LF_CLOCK_SYNC=1
+-- _LF_FEDERATE_NAMES_COMMA_SEPARATED="federate__adapter,federate__workflow"
+-- EXECUTABLE_PREAMBLE=TRUE
+-- FEDERATED_DECENTRALIZED=TRUE
+-- FEDERATED=TRUE
+-- FEDERATE_ID=0
+-- LF_REACTION_GRAPH_BREADTH=1
+-- LOG_LEVEL=2
+-- NUMBER_OF_FEDERATES=2
+-- NUMBER_OF_WORKERS=1
+-- NUMBER_OF_WATCHDOGS=0
+-- SCHEDULER=SCHED_NP
+-- LF_FILE_SEPARATOR="/"
+-- LF_SOURCE_GEN_DIRECTORY="/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter"
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter/build
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__adapter/build
+--- Executing command: cmake --build . --target install --parallel 16 --config Debug
+[ 16%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_atomic_gcc_clang.c.o
+[ 16%] Building C object core/CMakeFiles/lf-network-impl.dir/__/network/impl/src/lf_socket_support.c.o
+[ 16%] Building C object core/CMakeFiles/lf-network-impl.dir/__/network/impl/src/socket_common.c.o
+[ 16%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_unix_clock_support.c.o
+[ 16%] Building C object core/CMakeFiles/lf-network-impl.dir/__/network/impl/src/net_util.c.o
+[ 16%] Building C object core/CMakeFiles/lf-platform-impl.dir/__/platform/impl/platform.c.o
+[ 16%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_macos_support.c.o
+[ 16%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_platform_util.c.o
+[ 20%] Linking C static library liblf-platform-impl.a
+[ 20%] Linking C static library liblf-low-level-platform-impl.a
+[ 22%] Linking C static library liblf-network-impl.a
+[ 22%] Built target lf-platform-impl
+[ 22%] Built target lf-low-level-platform-impl
+[ 22%] Built target lf-network-impl
+[ 26%] Building C object core/CMakeFiles/reactor-c.dir/clock.c.o
+[ 26%] Building C object core/CMakeFiles/reactor-c.dir/port.c.o
+[ 28%] Building C object core/CMakeFiles/reactor-c.dir/tag.c.o
+[ 30%] Building C object core/CMakeFiles/reactor-c.dir/mixed_radix.c.o
+[ 34%] Building C object core/CMakeFiles/reactor-c.dir/reactor_common.c.o
+[ 34%] Building C object core/CMakeFiles/reactor-c.dir/federated/federate.c.o
+[ 38%] Building C object core/CMakeFiles/reactor-c.dir/threaded/reactor_threaded.c.o
+[ 38%] Building C object core/CMakeFiles/reactor-c.dir/lf_token.c.o
+[ 40%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_adaptive.c.o
+[ 42%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_instance.c.o
+[ 44%] Building C object core/CMakeFiles/reactor-c.dir/environment.c.o
+[ 46%] Building C object core/CMakeFiles/reactor-c.dir/federated/clock-sync.c.o
+[ 48%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_GEDF_NP.c.o
+[ 51%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_sync_tag_advance.c.o
+[ 53%] Building C object core/CMakeFiles/reactor-c.dir/threaded/watchdog.c.o
+[ 55%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_NP.c.o
+[ 57%] Building C object core/CMakeFiles/reactor-c.dir/utils/vector.c.o
+[ 59%] Building C object core/CMakeFiles/reactor-c.dir/utils/pqueue_base.c.o
+[ 61%] Building C object core/CMakeFiles/reactor-c.dir/utils/pqueue_tag.c.o
+[ 63%] Building C object core/CMakeFiles/reactor-c.dir/utils/pqueue.c.o
+[ 65%] Building C object core/CMakeFiles/reactor-c.dir/utils/util.c.o
+[ 67%] Building C object core/CMakeFiles/reactor-c.dir/utils/lf_semaphore.c.o
+[ 69%] Building C object core/CMakeFiles/reactor-c.dir/utils/hashset/hashset.c.o
+[ 71%] Building C object core/CMakeFiles/reactor-c.dir/utils/hashset/hashset_itr.c.o
+[ 73%] Building C object core/CMakeFiles/reactor-c.dir/__/platform/impl/platform.c.o
+[ 75%] Building C object core/CMakeFiles/reactor-c.dir/__/network/impl/src/net_util.c.o
+[ 77%] Building C object core/CMakeFiles/reactor-c.dir/__/network/impl/src/socket_common.c.o
+[ 79%] Building C object core/CMakeFiles/reactor-c.dir/__/network/impl/src/lf_socket_support.c.o
+[ 81%] Linking C static library libreactor-c.a
+[ 81%] Built target reactor-c
+[ 89%] Building C object CMakeFiles/federate__adapter.dir/_adapter.c.o
+[ 91%] Building C object CMakeFiles/federate__adapter.dir/lib/schedule.c.o
+[ 91%] Building C object CMakeFiles/federate__adapter.dir/_networksender_0_0.c.o
+[ 91%] Building C object CMakeFiles/federate__adapter.dir/_federate__adapter_main.c.o
+[ 91%] Building C object CMakeFiles/federate__adapter.dir/federate__adapter.c.o
+[ 97%] Building C object CMakeFiles/federate__adapter.dir/network/impl/src/net_util.c.o
+[ 97%] Building C object CMakeFiles/federate__adapter.dir/network/impl/src/lf_socket_support.c.o
+[ 97%] Building C object CMakeFiles/federate__adapter.dir/network/impl/src/socket_common.c.o
+[100%] Linking C executable federate__adapter
+[100%] Built target federate__adapter
+Install the project...
+-- Install configuration: "Release"
+lfc: [1minfo[0m[1m: SUCCESS: Compiling generated code for federate__adapter finished with no errors.[0m
+lfc: [1minfo[0m[1m: Generating code for: file:/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src/federate__workflow.lf[0m
+lfc: [1minfo[0m[1m: Generation mode: STANDALONE[0m
+lfc: [1minfo[0m[1m: Generating sources into: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow[0m
+lfc: [1minfo[0m[1m: Target Configuration:
+      - workers: 1
+      - keepalive: true
+      - single-threaded: false
+      - cmake-include: [include/federate__workflow_extension.cmake]
+      - compile-definitions: {FEDERATED_DECENTRALIZED=, EXECUTABLE_PREAMBLE=, NUMBER_OF_FEDERATES=2, FEDERATE_ID=1, FEDERATED=, LF_CLOCK_SYNC=1, _LF_FEDERATE_NAMES_COMMA_SEPARATED=\"federate__adapter,federate__workflow\"}
+      - timeout: 3 s
+      - docker: DockerOptions[enabled=false, noBuild=false, builderBase=, runnerBase=, rti=rti:local, shell=/bin/sh, preBuildScript=, postBuildScript=, preRunScript=, envFile=, dockerConfigFile=]
+      - _fed_setup: include/_federate__workflow_preamble.h
+      - coordination: decentralized[0m
+lfc: [1minfo[0m[1m: Copied 'include/federate__workflow_extension.cmake' from the file system.[0m
+Cleaning /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/include/src/federate__workflow
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow/build
+--- Executing command: cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime -DCMAKE_INSTALL_BINDIR=bin -DLF_FILE_SEPARATOR='"/"' -DLF_SOURCE_GEN_DIRECTORY=/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow
+-- The C compiler identification is AppleClang 21.0.0.21000401
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Including sources for threaded runtime with 1 worker(s) with scheduler=SCHED_NP and tracing=.
+-- Including the following sources: tag.c, clock.c, port.c, mixed_radix.c, reactor_common.c, lf_token.c, environment.c, federated/clock-sync.c, federated/federate.c, threaded/reactor_threaded.c, threaded/scheduler_adaptive.c, threaded/scheduler_GEDF_NP.c, threaded/scheduler_NP.c, threaded/scheduler_sync_tag_advance.c, threaded/scheduler_instance.c, threaded/watchdog.c, utils/vector.c, utils/pqueue_base.c, utils/pqueue_tag.c, utils/pqueue.c, utils/util.c, utils/lf_semaphore.c, utils/hashset/hashset.c, utils/hashset/hashset_itr.c
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Applying preprocessor definitions to low-level-platform...
+-- LOG_LEVEL=2
+-- NUMBER_OF_WORKERS=1
+-- NUMBER_OF_WATCHDOGS=0
+-- Applying preprocessor definitions to platform...
+-- LOG_LEVEL=2
+-- Applying preprocessor definitions...
+-- LF_CLOCK_SYNC=1
+-- _LF_FEDERATE_NAMES_COMMA_SEPARATED="federate__adapter,federate__workflow"
+-- EXECUTABLE_PREAMBLE=TRUE
+-- FEDERATED_DECENTRALIZED=TRUE
+-- FEDERATED=TRUE
+-- FEDERATE_ID=1
+-- LF_REACTION_GRAPH_BREADTH=1
+-- LOG_LEVEL=2
+-- NUMBER_OF_FEDERATES=2
+-- NUMBER_OF_WORKERS=1
+-- NUMBER_OF_WATCHDOGS=0
+-- SCHEDULER=SCHED_NP
+-- LF_FILE_SEPARATOR="/"
+-- LF_SOURCE_GEN_DIRECTORY="/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow"
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow/build
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/federate__workflow/build
+--- Executing command: cmake --build . --target install --parallel 16 --config Debug
+[  5%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_unix_clock_support.c.o
+[  5%] Building C object core/CMakeFiles/lf-network-impl.dir/__/network/impl/src/lf_socket_support.c.o
+[  5%] Building C object core/CMakeFiles/lf-network-impl.dir/__/network/impl/src/socket_common.c.o
+[ 11%] Building C object core/CMakeFiles/lf-network-impl.dir/__/network/impl/src/net_util.c.o
+[ 13%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_atomic_gcc_clang.c.o
+[ 15%] Building C object core/CMakeFiles/lf-platform-impl.dir/__/platform/impl/platform.c.o
+[ 15%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_macos_support.c.o
+[ 15%] Building C object core/CMakeFiles/lf-low-level-platform-impl.dir/__/low_level_platform/impl/src/lf_platform_util.c.o
+[ 17%] Linking C static library liblf-platform-impl.a
+[ 19%] Linking C static library liblf-low-level-platform-impl.a
+[ 21%] Linking C static library liblf-network-impl.a
+[ 21%] Built target lf-platform-impl
+[ 21%] Built target lf-low-level-platform-impl
+[ 21%] Built target lf-network-impl
+[ 23%] Building C object core/CMakeFiles/reactor-c.dir/clock.c.o
+[ 25%] Building C object core/CMakeFiles/reactor-c.dir/mixed_radix.c.o
+[ 28%] Building C object core/CMakeFiles/reactor-c.dir/lf_token.c.o
+[ 30%] Building C object core/CMakeFiles/reactor-c.dir/reactor_common.c.o
+[ 30%] Building C object core/CMakeFiles/reactor-c.dir/port.c.o
+[ 32%] Building C object core/CMakeFiles/reactor-c.dir/tag.c.o
+[ 34%] Building C object core/CMakeFiles/reactor-c.dir/environment.c.o
+[ 36%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_NP.c.o
+[ 40%] Building C object core/CMakeFiles/reactor-c.dir/federated/federate.c.o
+[ 40%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_sync_tag_advance.c.o
+[ 44%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_adaptive.c.o
+[ 44%] Building C object core/CMakeFiles/reactor-c.dir/threaded/reactor_threaded.c.o
+[ 46%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_instance.c.o
+[ 50%] Building C object core/CMakeFiles/reactor-c.dir/threaded/watchdog.c.o
+[ 51%] Building C object core/CMakeFiles/reactor-c.dir/federated/clock-sync.c.o
+[ 51%] Building C object core/CMakeFiles/reactor-c.dir/threaded/scheduler_GEDF_NP.c.o
+[ 53%] Building C object core/CMakeFiles/reactor-c.dir/utils/vector.c.o
+[ 55%] Building C object core/CMakeFiles/reactor-c.dir/utils/pqueue_base.c.o
+[ 57%] Building C object core/CMakeFiles/reactor-c.dir/utils/pqueue_tag.c.o
+[ 59%] Building C object core/CMakeFiles/reactor-c.dir/utils/util.c.o
+[ 61%] Building C object core/CMakeFiles/reactor-c.dir/utils/pqueue.c.o
+[ 63%] Building C object core/CMakeFiles/reactor-c.dir/utils/lf_semaphore.c.o
+[ 65%] Building C object core/CMakeFiles/reactor-c.dir/utils/hashset/hashset.c.o
+[ 67%] Building C object core/CMakeFiles/reactor-c.dir/utils/hashset/hashset_itr.c.o
+[ 69%] Building C object core/CMakeFiles/reactor-c.dir/__/network/impl/src/net_util.c.o
+[ 71%] Building C object core/CMakeFiles/reactor-c.dir/__/platform/impl/platform.c.o
+[ 73%] Building C object core/CMakeFiles/reactor-c.dir/__/network/impl/src/socket_common.c.o
+[ 75%] Building C object core/CMakeFiles/reactor-c.dir/__/network/impl/src/lf_socket_support.c.o
+[ 76%] Linking C static library libreactor-c.a
+[ 76%] Built target reactor-c
+[ 80%] Building C object CMakeFiles/federate__workflow.dir/_federate__workflow_main.c.o
+[ 80%] Building C object CMakeFiles/federate__workflow.dir/lib/schedule.c.o
+[ 82%] Building C object CMakeFiles/federate__workflow.dir/_controller.c.o
+[ 86%] Building C object CMakeFiles/federate__workflow.dir/_actuator.c.o
+[ 88%] Building C object CMakeFiles/federate__workflow.dir/_controlledworkflow.c.o
+[ 88%] Building C object CMakeFiles/federate__workflow.dir/__workflowobservation.c.o
+[ 90%] Building C object CMakeFiles/federate__workflow.dir/_networkreceiver_0.c.o
+[ 92%] Building C object CMakeFiles/federate__workflow.dir/federate__workflow.c.o
+[ 96%] Building C object CMakeFiles/federate__workflow.dir/network/impl/src/socket_common.c.o
+[ 98%] Building C object CMakeFiles/federate__workflow.dir/network/impl/src/lf_socket_support.c.o
+[ 98%] Building C object CMakeFiles/federate__workflow.dir/network/impl/src/net_util.c.o
+[100%] Linking C executable federate__workflow
+[100%] Built target federate__workflow
+Install the project...
+-- Install configuration: "Release"
+lfc: [1minfo[0m[1m: SUCCESS: Compiling generated code for federate__workflow finished with no errors.[0m
+lfc: [1minfo[0m[1m: Script for launching the federation: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/bin/PhysicalTime[0m
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/RTI
+--- Executing command: rm -rf build
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/RTI
+--- Executing command: cmake -Bbuild -DCMAKE_INSTALL_PREFIX=/Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime .
+-- The C compiler identification is AppleClang 21.0.0.21000401
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Applying preprocessor definitions to platform...
+-- LOG_LEVEL=2
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Applying preprocessor definitions to low-level-platform...
+-- LOG_LEVEL=2
+-- Found Git: /opt/homebrew/bin/git (found version "2.55.0")
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/rti/build
+--- Current working directory: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/RTI
+--- Executing command: cmake --build build --target install --parallel 16
+[  2%] Building C object build_RTI/CMakeFiles/lf-low-level-platform-impl.dir/__/__/__/low_level_platform/impl/src/lf_unix_clock_support.c.o
+[  4%] Building C object build_RTI/CMakeFiles/lf-network-impl.dir/__/__/__/network/impl/src/socket_common.c.o
+[ 11%] Building C object build_RTI/CMakeFiles/lf-low-level-platform-impl.dir/__/__/__/low_level_platform/impl/src/lf_platform_util.c.o
+[ 14%] Building C object build_RTI/CMakeFiles/lf-trace-impl.dir/__/__/__/trace/impl/src/trace_impl.c.o
+[ 14%] Building C object build_RTI/CMakeFiles/lf-network-impl.dir/__/__/__/network/impl/src/net_util.c.o
+[ 14%] Building C object build_RTI/CMakeFiles/lf-low-level-platform-impl.dir/__/__/__/low_level_platform/impl/src/lf_atomic_gcc_clang.c.o
+[ 16%] Building C object build_RTI/CMakeFiles/lf-platform-impl.dir/__/__/__/platform/impl/platform.c.o
+[ 19%] Building C object build_RTI/CMakeFiles/lf-low-level-platform-impl.dir/__/__/__/low_level_platform/impl/src/lf_macos_support.c.o
+[ 21%] Building C object build_RTI/CMakeFiles/lf-network-impl.dir/__/__/__/network/impl/src/lf_socket_support.c.o
+[ 23%] Linking C static library liblf-platform-impl.a
+[ 28%] Linking C static library liblf-low-level-platform-impl.a
+[ 28%] Linking C static library /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/src-gen/rti/trace/impl/lib/lf-trace-impl.a
+[ 30%] Linking C static library liblf-network-impl.a
+[ 30%] Built target lf-trace-impl
+[ 30%] Built target lf-platform-impl
+[ 30%] Built target lf-low-level-platform-impl
+[ 30%] Built target lf-network-impl
+[ 33%] Building C object build_RTI/CMakeFiles/rti_lib.dir/rti_common.c.o
+[ 35%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/tracepoint.c.o
+[ 40%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/clock.c.o
+[ 47%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/tag.c.o
+[ 47%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/utils/util.c.o
+[ 47%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/utils/pqueue_tag.c.o
+[ 47%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/__/trace/impl/src/trace_impl.c.o
+[ 50%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/__/network/impl/src/socket_common.c.o
+[ 52%] Building C object build_RTI/CMakeFiles/rti_lib.dir/rti_remote.c.o
+[ 54%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/utils/pqueue_base.c.o
+[ 57%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/utils/pqueue.c.o
+[ 59%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/__/network/impl/src/lf_socket_support.c.o
+[ 61%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/__/platform/impl/platform.c.o
+[ 64%] Building C object build_RTI/CMakeFiles/rti_lib.dir/__/__/__/network/impl/src/net_util.c.o
+[ 66%] Linking C static library librti_lib.a
+[ 66%] Built target rti_lib
+[ 69%] Building C object build_RTI/CMakeFiles/RTI.dir/main.c.o
+[ 71%] Building C object build_RTI/CMakeFiles/RTI.dir/__/__/__/platform/impl/platform.c.o
+[ 73%] Building C object build_RTI/CMakeFiles/rti_common_test.dir/__/__/__/platform/impl/platform.c.o
+[ 76%] Building C object build_RTI/CMakeFiles/RTI.dir/__/__/__/trace/impl/src/trace_impl.c.o
+[ 80%] Building C object build_RTI/CMakeFiles/rti_common_test.dir/test/rti_common_test.c.o
+[ 80%] Building C object build_RTI/CMakeFiles/RTI.dir/__/__/__/network/impl/src/net_util.c.o
+[ 90%] Building C object build_RTI/CMakeFiles/rti_common_test.dir/__/__/__/network/impl/src/socket_common.c.o
+[ 90%] Building C object build_RTI/CMakeFiles/rti_common_test.dir/__/__/__/network/impl/src/lf_socket_support.c.o
+[ 92%] Building C object build_RTI/CMakeFiles/rti_common_test.dir/__/__/__/network/impl/src/net_util.c.o
+[ 92%] Building C object build_RTI/CMakeFiles/RTI.dir/__/__/__/network/impl/src/socket_common.c.o
+[ 92%] Building C object build_RTI/CMakeFiles/rti_common_test.dir/__/__/__/trace/impl/src/trace_impl.c.o
+[ 95%] Building C object build_RTI/CMakeFiles/RTI.dir/__/__/__/network/impl/src/lf_socket_support.c.o
+[100%] Linking C executable ../RTI
+[100%] Linking C executable ../rti_common_test
+[100%] Built target RTI
+[100%] Built target rti_common_test
+Install the project...
+-- Install configuration: ""
+-- Installing: /Users/shauryaverma/Documents/GitHub/lingua-franca/experiments/physical-time/build/w20/fed-gen/PhysicalTime/bin/RTI
+lfc: [1minfo[0m[1m: Code generation finished.[0m
